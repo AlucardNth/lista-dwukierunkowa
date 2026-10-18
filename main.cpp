@@ -14,14 +14,14 @@ int main() {
     firstNode->next = secondNode;
     secondNode->prev = firstNode;
 
-    std::cout << "Pierwszy węzeł wartość: " << firstNode->data << "\n";
-    std::cout << "Drugi węzeł (przez next) wartość: " << firstNode->next->data << "\n";
-    std::cout << "Drugi węzeł poprzedni (przez prev) wartość: " << secondNode->prev->data << "\n";
+    cout << "Pierwszy węzeł wartość: " << firstNode->data << "\n";
+    cout << "Drugi węzeł (przez next) wartość: " << firstNode->next->data << "\n";
+    cout << "Drugi węzeł poprzedni (przez prev) wartość: " << secondNode->prev->data << "\n";
 
     delete firstNode;
     delete secondNode;
 
-    std::cout << "=== TEST ZAKOŃCZONY POMYŚLNIE ===\n";
+    cout << "=== TEST ZAKOŃCZONY POMYŚLNIE ===\n";
 
     return 0;
 }
