@@ -1,24 +1,28 @@
 #include <iostream>
-#include <fstream>
+#include "Node.h"
+#include "NodeFactory.h"
+
 using namespace std;
 
-int main(int argc, char** argv) {
+int main() {
+    cout << "TEST\n";
 
- 	ofstream plik("strona.html");
- 	if(!plik)
- 		cout<<"blad zapisu pliku";
- 	else
- 		{
- 		plik<<"<html>";
- 		plik<<"<head><title>Moja pierwsza strona www</title></head>";
- 		plik<<"<body>Strona WWW</body>";
- 		plik<<"</html>";
-		
-		cout<<"Wygenerowana strona"; 	
-		}
-    plik.close();
     
-    
+    Node* firstNode = NodeFactory::createNode(10);
+    Node* secondNode = NodeFactory::createNode(20);
+
+    firstNode->next = secondNode;
+    secondNode->prev = firstNode;
+
+    std::cout << "Pierwszy węzeł wartość: " << firstNode->data << "\n";
+    std::cout << "Drugi węzeł (przez next) wartość: " << firstNode->next->data << "\n";
+    std::cout << "Drugi węzeł poprzedni (przez prev) wartość: " << secondNode->prev->data << "\n";
+
+    delete firstNode;
+    delete secondNode;
+
+    std::cout << "=== TEST ZAKOŃCZONY POMYŚLNIE ===\n";
+
     return 0;
 }
 
