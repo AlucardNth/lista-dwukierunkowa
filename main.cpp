@@ -25,7 +25,7 @@ int main() {
 
     // 3. Dodaj element pod wskazany indeks (np. pod indeks 1 wstawiamy 15)[cite: 4]
     list.insertAtIndex(1, 15);
-    cout << "Po wstawieniu 15 pod indeks 1: ";
+    cout << "Po wstawieniu 15 pod indexu 1: ";
     list.displayForward();
 
     // 4. Wyświetl całą listę[cite: 4]
@@ -53,7 +53,7 @@ int main() {
 
     // 9. Usuń element pod wskazanym indeksem[cite: 4]
     list.removeAtIndex(1);
-    cout << "Po usunieciu spod indeksu 1: ";
+    cout << "Po usunieciu spod indexu 1: ";
     list.displayForward();
 
     // 10. Czyść całą listę[cite: 4]
