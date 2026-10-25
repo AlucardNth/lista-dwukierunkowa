@@ -1,28 +1,27 @@
+/**
+ * @file main.cpp
+ * @brief Główny plik programu testujący działanie listy dwukierunkowej i fabryki.
+ */
+
 #include <iostream>
-#include "Node.h"
-#include "NodeFactory.h"
+#include "DoublyLinkedList.h"
 
 using namespace std;
 
+/**
+ * @brief Główna funkcja programu.
+ * @return int Kod wyjścia programu.
+ */
 int main() {
-    cout << "TEST\n";
+    cout << "TEST LISTY DWUKIERUNKOWEJ I FABRYKI\n";
 
+    DoublyLinkedList list;
     
-    Node* firstNode = NodeFactory::createNode(10);
-    Node* secondNode = NodeFactory::createNode(20);
+    list.append(10);
+    list.append(20);
+    list.append(30);
 
-    firstNode->next = secondNode;
-    secondNode->prev = firstNode;
-
-    cout << "Pierwszy węzeł wartość: " << firstNode->data << "\n";
-    cout << "Drugi węzeł (przez next) wartość: " << firstNode->next->data << "\n";
-    cout << "Drugi węzeł poprzedni (przez prev) wartość: " << secondNode->prev->data << "\n";
-
-    delete firstNode;
-    delete secondNode;
-
-    cout << "=== TEST ZAKOŃCZONY POMYŚLNIE ===\n";
+    list.displayForward();
 
     return 0;
 }
-
