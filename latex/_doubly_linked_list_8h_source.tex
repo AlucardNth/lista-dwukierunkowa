@@ -1,0 +1,36 @@
+\doxysection{Doubly\+Linked\+List.\+h}
+\hypertarget{_doubly_linked_list_8h_source}{}\label{_doubly_linked_list_8h_source}\doxymbox{\hyperlink{_doubly_linked_list_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DOUBLY\_LINKED\_LIST\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DOUBLY\_LINKED\_LIST\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_node_8h}{Node.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }DoublyLinkedList\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \doxymbox{\hyperlink{class_node}{Node}}*\ head;\ }
+\DoxyCodeLine{00018\ \ \ \ \ \doxymbox{\hyperlink{class_node}{Node}}*\ tail;\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ DoublyLinkedList();}
+\DoxyCodeLine{00022\ \ \ \ \ \string~DoublyLinkedList();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ prepend(\textcolor{keywordtype}{int}\ val);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Dodaj\ na\ początek[cite:\ 4]}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ append(\textcolor{keywordtype}{int}\ val);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Dodaj\ na\ koniec[cite:\ 4]}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ insertAtIndex(\textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{int}\ val);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Dodaj\ pod\ indeks[cite:\ 4]}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ removeHead();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Usuń\ z\ początku[cite:\ 4]}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ removeTail();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Usuń\ z\ końca[cite:\ 4]}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ removeAtIndex(\textcolor{keywordtype}{int}\ index);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Usuń\ z\ indeksu[cite:\ 4]}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ displayForward();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Wyświetl\ całą\ listę[cite:\ 4]}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ displayBackward();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Wyświetl\ w\ odwrotnej\ kolejności[cite:\ 4]}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ displayNext(\doxymbox{\hyperlink{class_node}{Node}}*\ node);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Wyświetl\ następny\ element[cite:\ 4]}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ displayPrev(\doxymbox{\hyperlink{class_node}{Node}}*\ node);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Wyświetl\ poprzedni\ element[cite:\ 4]}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ clear();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Czyść\ całą\ listę[cite:\ 4]}}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{class_node}{Node}}*\ getNode(\textcolor{keywordtype}{int}\ index);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Pomocnicza:\ pobierz\ węzeł\ pod\ indeksem}}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DOUBLY\_LINKED\_LIST\_H}}
+
+\end{DoxyCode}
