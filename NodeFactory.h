@@ -3,10 +3,23 @@
 
 #include "Node.h"
 
+/**
+ * @file NodeFactory.h
+ * @brief Definicja klasy NodeFactory implementującej wzorzec projektowy Factory.
+ */
 
+/**
+ * @class NodeFactory
+ * @brief Klasa odpowiedzialna za kontrolowane tworzenie nowych obiektów węzłów.
+ */
 class NodeFactory {
-    public:
-        static Node* createNode(int val);
+public:
+    /**
+     * @brief Statyczna metoda tworząca nowy węzeł na stercie.
+     * @param val Wartość dla nowego węzła.
+     * @return Wskaźnik do utworzonego obiektu Node.
+     */
+    static Node* createNode(int val);
 };
 
-#endif
+#endif // NODE_FACTORY_H
