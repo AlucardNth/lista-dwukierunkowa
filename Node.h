@@ -2,20 +2,25 @@
 #define NODE_H
 
 /**
-* @brief Klasa reprezentujaca pojedynczy wezel listy dwukierunkowej.
-*/
-
-class Node {
-    public:
-        int data; ///< Wartosc ktora jest przechowywana w wezle
-        Node* prev; ///< Wskaznik na poprzedni wezel
-        Node* next; ///< Wskaznik na nastepny wezel
+ * @file Node.h
+ * @brief Definicja klasy Node reprezentującej pojedynczy element listy dwukierunkowej.
+ */
 
 /**
-* @brief Konstruktor inicjalizujacy wezel z podana wartoscia.
-* @param val Wartosc danego elementu.
-*/
-        Node(int val);
+ * @class Node
+ * @brief Klasa przechowująca wartość oraz wskaźniki na sąsiednie węzły.
+ */
+class Node {
+public:
+    int data;     ///< Wartość przechowywana w węźle
+    Node* next;   ///< Wskaźnik na następny węzeł
+    Node* prev;   ///< Wskaźnik na poprzedni węzeł
+
+    /**
+     * @brief Konstruktor inicjalizujący węzeł podaną wartością.
+     * @param val Liczba całkowita zapisywana w węźle.
+     */
+    Node(int val);
 };
 
-#endif
+#endif // NODE_H
