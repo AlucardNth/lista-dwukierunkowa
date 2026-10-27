@@ -21,17 +21,17 @@ public:
     DoublyLinkedList();
     ~DoublyLinkedList();
 
-    void prepend(int val);                                  // Dodaj na początek[cite: 4]
-    void append(int val);                                   // Dodaj na koniec[cite: 4]
-    void insertAtIndex(int index, int val);                 // Dodaj pod indeks[cite: 4]
-    void removeHead();                                      // Usuń z początku[cite: 4]
-    void removeTail();                                      // Usuń z końca[cite: 4]
-    void removeAtIndex(int index);                          // Usuń z indeksu[cite: 4]
-    void displayForward();                                  // Wyświetl całą listę[cite: 4]
-    void displayBackward();                                 // Wyświetl w odwrotnej kolejności[cite: 4]
-    void displayNext(Node* node);                           // Wyświetl następny element[cite: 4]
-    void displayPrev(Node* node);                           // Wyświetl poprzedni element[cite: 4]
-    void clear();                                           // Czyść całą listę[cite: 4]
+    void prepend(int val);                                  // Dodaj na początek
+    void append(int val);                                   // Dodaj na koniec
+    void insertAtIndex(int index, int val);                 // Dodaj pod indeks
+    void removeHead();                                      // Usuń z początku
+    void removeTail();                                      // Usuń z końca
+    void removeAtIndex(int index);                          // Usuń z indeksu
+    void displayForward();                                  // Wyświetl całą listę
+    void displayBackward();                                 // Wyświetl w odwrotnej kolejności
+    void displayNext(Node* node);                           // Wyświetl następny element
+    void displayPrev(Node* node);                           // Wyświetl poprzedni element
+    void clear();                                           // Czyść całą listę
     
     Node* getNode(int index);                               // Pomocnicza: pobierz węzeł pod indeksem
 };
